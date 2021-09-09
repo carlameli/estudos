@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <style>
+        body{
+            font: normal 20px Arial;
+            background: rgb(201, 38, 60);
+            color:rgb(218, 225, 228)
+            
+        }
+
+        #res{
+            margin-top: 20px;
+        }
+
+        input[type=button]{
+            border-radius: 10px;
+            border: none;
+            box-shadow: 1px 1px 10px blue;
+            font: bold 18px sans-serif
+        }
+        input[type=text]{
+            height: 30px;
+        }
+
+    </style>
+    <h1> País de Origem</h1>
+    Local: <input type="text" name="txtorigem" id="txtorigem">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id ='res'>
+
+    </div>
+    <script>
+        function verificar(){
+            var txrorigem = window.document.getElementById('txtorigem')
+            var res = window.document.getElementById('res')
+if(txtorigem.value == 'Brasil'){
+
+res.innerHTML=('Você é Brasileira! <p><strong>Se fudeu</strong></p>');
+} else {
+    res.innerHTML=(' Você é Estrangeira! <p> Sorte a sua</p>')
+}
+
+        }
+    </script>
+    
+</body>
+</html>
